@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form action="/login" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <br>
+        <label for="Name" id="name "><strong>First Name:</strong></label>
+        <input type="text" id="name " required placeholder="Jayden">
+        <br><br>
+        <label for="Lname" id="Lname"><strong>Last Name:</strong></label>
+        <input type="text" id="Lname" required placeholder="Ronoo">
+        <br><br>
+        <label for="Birthday" id="Birthday"><strong>Date of Birth:</strong></label>
+        <input type="date" id="date" name="bdate" >
+        <br><br>
+        <label for="age" id="age"><strong>Age:</strong></label>
+        <input type="age" id="age">
+         <br><br>
+        <label for="gender" id="gender"><strong>Gender:</strong></label>
+        <br>
+          <input type="radio" name="title">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="title">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="file" id="file"><strong>Profile Photo:</strong></label>
+        <input type="file">
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Contact & Address Information</legend>
+            <br>
+            <label for="email" id="email"><strong>Email Address:</strong></label>
+            <input type="email" id="email" required placeholder="Jayronoo@gmail.com">
+            <br><br>
+            <label for="number" id="number"><strong>Phone Number:</strong></label>
+            <input type="tel" id="number" required placeholder="0700000011">
+            <br><br>
+            <label for="website" id="website"><strong>Personal website:</strong></label>
+            <input type="url" id="Website" required placeholder="https://Jayronoo.com">
+            <br><br>
+            <label for="address" id="address"><strong>Street Address:</strong></label>
+            <input type="address" id="address">
+            <br><br>
+            <label for="city" id="city"><strong>City:</strong></label>
+            <input type="City" id="city">
+            <br><br>
+            <label for="country" id="country"><strong>Country:</strong></label>
+            <input type="Country" id="country" required placeholder="Kenya">
+            <br><br>
+            <label for="code" id="code"><strong>ZIP/Postal Code:</strong></label>
+            <input type="code" id="code">
+            <br><br>
+            <label for="time" id="time"><strong>Preferred Contact Time:</strong></label>
+            <input type="time" name="time" id="Time">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Preferences & Interests</legend>
+                <br>
+                <label for="color" id="color"><strong>Favorite Color:</strong></label>
+                <input type="color"  id="color">
+                <br><br>
+                <label for="exlvl" id="exlvl"><Strong>Experience Level (1-10):</Strong></label>
+                <input type="range" id="exlvl">
+                <br><br>
+                <label for="Birth" id="Birth"><strong>Birth Month:</strong></label>
+                <input type="month" id="Birth">
+                <br><br>
+                <label for="week" id="week"><strong>Available Week:</strong></label>
+                <input type="week" id="week">
+                <br><br>
+                <label for="keywords" id="keywords"><strong>Search Keywords:</strong></label>
+                <input type="search" id="keywords" required placeholder="search keywords">
+                <br><br>
+                <label for="Interests" id="Interests"><strong>Interests(select all that apply):</strong></label>
+                <br>
+                <input type="checkbox" id="Interests">
+                <label for="tech" id="tech">Technology</label>
+                <br>
+                <input type="checkbox" id="sport">
+                <label for="sport" id="sport">Sports</label>
+                <br>
+                <input type="checkbox" id="music">
+                <label for="music" id="music">Music</label>
+                <br>
+                <input type="checkbox" id="travel">
+                <label for="travel" id="travel">Travel</label>
+                <br>
+                <input type="checkbox" id="reading">
+                <label for="reading" id="reading">Reading</label>
+                <br>
+                <input type="checkbox" id="cooking">
+                <label for="cooking" id="cooking">Cooking</label>
+                <br><br>
+                <label for="edct" id="edct"><strong>Education Level:</strong></label>
+                <select name="edct" id="edct">
+                    <option value="select disabled hidden">Select education level</option>
+                </select>
+                <br><br>
+                <label for="pass" id="pass"><strong>Create Password:</strong></label>
+                <input type="password" id="pass">
+                <br><br>
+                <label for="pass" id="pass"><strong>Confirm Password:</strong></label>
+                <input type="password" id="pass">
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+                <legend>Feedback & Additional Information</legend>
+                <label for="textarea"><strong>Tell Us About Yourself:</strong></label>
+                <br>
+                <textarea name="textarea" id="textarea" rows="6" cols="40" required placeholder="Write a brief description about yourself..."></textarea>
+                <br><br>
+                <label for="suggest" id="suggest"><strong>Suggestions For Improvement:</strong></label>
+                <br>
+                <textarea name="suggest" id="suggest" rows="6" cols="40" required placeholder="Any Suggestions or Feedback..."></textarea>
+                <br><br>
+                <label for="dtime" id="dtime"><strong>Registration Date & Time:</strong></label>
+                <input type="date" id="dtime">
+                <br><br>
+                <label for="hdr" id="hdr" ><strong>How Did You Hear About Us?</strong></label>
+                 <select name="hdr" id="hdr"> 
+                    <option value="hdr">Select Country</option>
+                 </select> 
+                <br><br>
+                <label for="tfile" id="tfile"><strong>Upload Resume(optional):</strong></label>
+                <input type="file" id="tfile">
+                <br><br>
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe" id="subscribe"><strong>Subscribe to Our Newsletter</strong></label>
+                <br><br>
+                <input type="checkbox" id="terms">
+                <label for="terms" id="terms"><strong>I Agree to the Terms and Conditions</strong></label>
+                <br><br>
+                <input type="checkbox" id="privacy">
+                <label for="privacy" id="privacy"><strong>I Agree to the Privacy Policy</strong></label>
+
+            </fieldset>
+            <br>
+           <button><strong>Register</strong></button>
+          <button><strong>Clear Form</strong></button>
+
+
+
+</form>
+    
+</body>
+</html>
